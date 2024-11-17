@@ -151,5 +151,5 @@ Usando la ecuación de regresión lineal, las predicciones para el comportamient
 - Depuración de datos: {'Sí' if df.isnull().sum().sum() == 0 else 'No'} porque no hay datos nulos en la base de datos.
 """
 
-with open('reporte.md', 'w') as f:
+with open('reporte.md', 'w', encoding='utf-8') as f:
     f.write(reporte)
