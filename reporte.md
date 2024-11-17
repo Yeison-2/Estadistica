@@ -78,4 +78,3 @@ Usando la ecuación de regresión lineal, las predicciones para el comportamient
 - Edad mayor: 59 años
 - Sistema Operativo iOS: 146
 - Sistema Operativo Android: 554
-- Depuración de datos: Sí porque no hay datos nulos en la base de datos.

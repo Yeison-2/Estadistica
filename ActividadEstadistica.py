@@ -148,7 +148,6 @@ Usando la ecuación de regresión lineal, las predicciones para el comportamient
 - Edad mayor: {df['Age'].max()} años
 - Sistema Operativo iOS: {df[df['Operating System'] == 'iOS'].shape[0]}
 - Sistema Operativo Android: {df[df['Operating System'] == 'Android'].shape[0]}
-- Depuración de datos: {'Sí' if df.isnull().sum().sum() == 0 else 'No'} porque no hay datos nulos en la base de datos.
 """
 
 with open('reporte.md', 'w', encoding='utf-8') as f:
