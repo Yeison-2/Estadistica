@@ -30,6 +30,41 @@ coef_variacion_app = desviacion_estandar_app / media_app
 asimetria_app = skew(uso_app)
 curtosis_app = kurtosis(uso_app)
 
+#calcular el histograma de la variable 'App Usage Time (min/day)'
+plt.figure(figsize=(10, 6))
+plt.hist(uso_app, bins=20, color='blue', edgecolor='black')
+plt.title('Histograma de Tiempo de Uso de la App (min/día)')
+plt.xlabel('Tiempo de Uso de la App (min/día)')
+plt.ylabel('Frecuencia')
+plt.savefig('histograma.png')
+plt.close()
+
+#grafico pastel para la variable 'App Usage Time (min/day)'
+plt.figure(figsize=(10, 6))
+plt.pie([df[df['App Usage Time (min/day)'] < 60].shape[0], df[df['App Usage Time (min/day)'] >= 60].shape[0]], labels=['Menos de 60 min/día', '60 o más min/día'], autopct='%1.1f%%', colors=['blue', 'red'])
+plt.title('Proporción de Tiempo de Uso de la App')
+plt.savefig('grafico_pastel.png')
+plt.close()
+
+
+#calcular el histograma de la variable 'User Behavior Class'
+plt.figure(figsize=(10, 6))
+plt.hist(comportamiento_usuario, bins=5, color='blue', edgecolor='black')
+plt.title('Histograma de Comportamiento del Usuario')
+plt.xlabel('Comportamiento del Usuario')
+plt.ylabel('Frecuencia')
+plt.savefig('histograma_comportamiento.png')
+plt.close()
+
+# grafico pastel para la variable 'User Behavior Class'
+plt.figure(figsize=(10, 6))
+plt.pie([df[df['User Behavior Class'] == 1].shape[0], df[df['User Behavior Class'] == 2].shape[0], df[df['User Behavior Class'] == 3].shape[0], df[df['User Behavior Class'] == 4].shape[0], df[df['User Behavior Class'] == 5].shape[0]], labels=['Excelente', 'Bueno', 'Regular', 'Malo', 'Muy Malo'], autopct='%1.1f%%', colors=['blue', 'red', 'green', 'purple', 'orange'])
+plt.title('Proporción de Comportamiento del Usuario')
+plt.savefig('grafico_pastel_comportamiento.png')
+plt.close()
+
+
+
 # Calculate variance, standard deviation, coefficient of variation, skewness, kurtosis for 'User Behavior Class'
 varianza_comportamiento = comportamiento_usuario.var()
 desviacion_estandar_comportamiento = comportamiento_usuario.std()
@@ -95,6 +130,14 @@ Este informe presenta un análisis detallado del tiempo de uso de aplicaciones y
 - **Asimetria**: {asimetria_app}
 - **Curtosis**: {curtosis_app}
 
+## Analisis de Distribucion
+### Histograma de Tiempo de Uso de la App (min/dia)
+![Histograma de Tiempo de Uso de la App](histograma.png)
+
+### Grafico de torta de Tiempo de Uso de la App
+![Grafico de torta de Tiempo de Uso de la App](grafico_pastel.png)
+
+
 ## Medidas Estadisticas de Comportamiento del Usuario
 - **Descripcion**: Esta variable representa el comportamiento general de los usuarios al utilizar aplicaciones móviles de 1 a 5 (1: Excelente, 2: Bueno, 3: Regular, 4: Malo, 5: Muy Malo). 
 - **Media**: {media_comportamiento}
@@ -105,6 +148,14 @@ Este informe presenta un análisis detallado del tiempo de uso de aplicaciones y
 - **Coeficiente de Variacion**: {coef_variacion_comportamiento}
 - **Asimetria**: {asimetria_comportamiento}
 - **Curtosis**: {curtosis_comportamiento}
+
+## Analisis de Distribucion
+### Histograma de Comportamiento del Usuario
+![Histograma de Comportamiento del Usuario](histograma_comportamiento.png)
+
+### Grafico de torta de Comportamiento del Usuario
+![Grafico de torta de Comportamiento del Usuario](grafico_pastel_comportamiento.png)
+
 
 ## Analisis de Regresion Lineal
 
