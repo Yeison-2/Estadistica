@@ -54,9 +54,9 @@ El coeficiente de correlación de Pearson es: 0.97
 
 ### Predicciones
 Usando la ecuación de regresión lineal, las predicciones para el comportamiento del usuario son:
-- Para un uso de datos de 30 min/día: 1.14
-- Para un uso de datos de 60 min/día: 1.37
-- Para un uso de datos de 90 min/día: 1.60
+- Para un uso de las aplicaciones  de 30 min/día: 1.14
+- Para un uso de las aplicaciones  de 60 min/día: 1.37
+- Para un uso de las aplicaciones  de 90 min/día: 1.60
 
 
 
@@ -78,3 +78,4 @@ Usando la ecuación de regresión lineal, las predicciones para el comportamient
 - Edad mayor: 59 años
 - Sistema Operativo iOS: 146
 - Sistema Operativo Android: 554
+- El informe esta alojado en: [GitHub](https://github.com/Yeison-2/Estadistica)

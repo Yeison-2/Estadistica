@@ -124,9 +124,9 @@ El coeficiente de correlación de Pearson es: {coef_corr_pearson:.2f}
 
 ### Predicciones
 Usando la ecuación de regresión lineal, las predicciones para el comportamiento del usuario son:
-- Para un uso de datos de 30 min/día: {predicciones[0]:.2f}
-- Para un uso de datos de 60 min/día: {predicciones[1]:.2f}
-- Para un uso de datos de 90 min/día: {predicciones[2]:.2f}
+- Para un uso de las aplicaciones  de 30 min/día: {predicciones[0]:.2f}
+- Para un uso de las aplicaciones  de 60 min/día: {predicciones[1]:.2f}
+- Para un uso de las aplicaciones  de 90 min/día: {predicciones[2]:.2f}
 
 
 
@@ -148,7 +148,10 @@ Usando la ecuación de regresión lineal, las predicciones para el comportamient
 - Edad mayor: {df['Age'].max()} años
 - Sistema Operativo iOS: {df[df['Operating System'] == 'iOS'].shape[0]}
 - Sistema Operativo Android: {df[df['Operating System'] == 'Android'].shape[0]}
+- El informe esta alojado en: [GitHub](https://github.com/Yeison-2/Estadistica)
 """
+
+
 
 with open('reporte.md', 'w', encoding='utf-8') as f:
     f.write(reporte)
