@@ -78,10 +78,11 @@ Usando la ecuación de regresión lineal, las predicciones para el comportamient
 
 ## Conclusiones
 - Se observa una relación positiva entre el uso de datos y el comportamiento del usuario.
-- El coeficiente de determinación indica que el modelo de regresión lineal explica el 0.94% de la variabilidad en el comportamiento del usuario.
+- El coeficiente de determinación indica que el modelo de regresión lineal explica el 94% de la variabilidad en el comportamiento del usuario.
 - El coeficiente de correlación de Pearson indica una correlación positiva entre el uso de datos y el comportamiento del usuario.
-- Se concluyo que el tiempo de uso de aplicaciones y el comportamiento del usuario están relacionados.
-- La relacion entre las variables es positiva, lo que significa que a medida que aumenta el tiempo de uso de la aplicación, el comportamiento del usuario tiende a empeorar.
+- Se concluye que el tiempo de uso de aplicaciones y el comportamiento del usuario están relacionados.
+- La relación entre las variables es positiva, lo que significa que a medida que aumenta el tiempo de uso de la aplicación, el comportamiento del usuario tiende a empeorar.
+
 
 ## Anexos
 - Fuente de los datos: [Kaggle](https://www.kaggle.com/datasets/valakhorasani/mobile-device-usage-and-user-behavior-dataset)
