@@ -121,14 +121,14 @@ Este informe presenta un análisis detallado del tiempo de uso de aplicaciones y
 
 ## Medidas Estadisticas de Tiempo de Uso de la App (min/dia)
 - **Descripcion**: Esta variable representa el tiempo diario que los usuarios pasan utilizando una aplicación móvil.
-- **Media**: {media_app}
-- **Mediana**: {mediana_app}
-- **Moda**: {moda_app}
-- **Varianza**: {varianza_app}
-- **Desviacion Estandar**: {desviacion_estandar_app}
-- **Coeficiente de Variacion**: {coef_variacion_app}
-- **Asimetria**: {asimetria_app}
-- **Curtosis**: {curtosis_app}
+- **Media**: {media_app} en promedio, los usuarios pasan aproximadamente 271.13 minutos al día utilizando aplicaciones móviles.
+- **Mediana**: {mediana_app} La mitad de los usuarios pasan 227.5 minutos o menos al día utilizando aplicaciones móviles, y la otra mitad pasa más tiempo.
+- **Moda**: {moda_app} El tiempo de uso más común entre los usuarios es de 64 minutos al día.
+- **Varianza**: {varianza_app} Hay una alta variabilidad en el tiempo de uso de aplicaciones móviles entre los usuarios.
+- **Desviacion Estandar**: {desviacion_estandar_app} En promedio, el tiempo de uso de aplicaciones móviles varía en 177.20 minutos respecto a la media.
+- **Coeficiente de Variacion**: {coef_variacion_app} La desviación estándar es el 65% de la media, lo que muestra una alta variabilidad relativa en el tiempo de uso.
+- **Asimetria**: {asimetria_app} La distribución de los datos tiene una ligera asimetría positiva, indicando que hay más usuarios con tiempos de uso por encima de la media.
+- **Curtosis**: {curtosis_app} La distribución es más plana que una distribución normal (leptocúrtica), indicando menos valores extremos.
 
 ## Analisis de Distribucion
 ### Histograma de Tiempo de Uso de la App (min/dia)
@@ -140,14 +140,14 @@ Este informe presenta un análisis detallado del tiempo de uso de aplicaciones y
 
 ## Medidas Estadisticas de Comportamiento del Usuario
 - **Descripcion**: Esta variable representa el comportamiento general de los usuarios al utilizar aplicaciones móviles de 1 a 5 (1: Excelente, 2: Bueno, 3: Regular, 4: Malo, 5: Muy Malo). 
-- **Media**: {media_comportamiento}
-- **Mediana**: {mediana_comportamiento}
-- **Moda**: {moda_comportamiento}
-- **Varianza**: {varianza_comportamiento}
-- **Desviacion Estandar**: {desviacion_estandar_comportamiento}
-- **Coeficiente de Variacion**: {coef_variacion_comportamiento}
-- **Asimetria**: {asimetria_comportamiento}
-- **Curtosis**: {curtosis_comportamiento}
+- **Media**: {media_comportamiento} el comportamiento del usuario es aproximadamente 3, lo que indica un comportamiento "Regular".
+- **Mediana**: {mediana_comportamiento} La mitad de los usuarios tienen un comportamiento igual o mejor que "Regular" y la otra mitad igual o peor.
+- **Moda**: {moda_comportamiento} El comportamiento más común entre los usuarios es "Bueno".
+- **Varianza**: {varianza_comportamiento} Hay una variabilidad moderada en el comportamiento del usuario.
+- **Desviacion Estandar**: {desviacion_estandar_comportamiento} En promedio, el comportamiento del usuario varía en 1.40 unidades respecto a la media.
+- **Coeficiente de Variacion**: {coef_variacion_comportamiento} La desviación estándar es el 47% de la media, lo que muestra una variabilidad relativa moderada.
+- **Asimetria**: {asimetria_comportamiento} La distribución de los datos es casi simétrica.
+- **Curtosis**: {curtosis_comportamiento} La distribución es más plana que una distribución normal (leptocúrtica), indicando menos valores extremos.
 
 ## Analisis de Distribucion
 ### Histograma de Comportamiento del Usuario
